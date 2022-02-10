@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export default function header() {
     return (
@@ -55,7 +55,7 @@ export default function header() {
                                     </a>
                                     <ul class="sub-menu" id="submenu-2">
                                         <li class="sub-menu--item">
-                                            <a href="about-us.html">About Us</a>
+                                            <Link href="/about"><a>About Us</a></Link>
                                         </li>
                                         <li class="sub-menu--item nav-item-has-children">
                                             <a href="#" data-menu-get="h3" class="drop-trigger">Blog<i class="fas fa-angle-right"></i>
@@ -232,9 +232,9 @@ export default function header() {
                         </nav>
                     </div>
                     <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
-                        <a class="btn-link heading-default-color-2 me-4" href="#">
+                        <Link href="/"><a class="btn-link heading-default-color-2 me-4">
                             Login
-            </a>
+            </a></Link>
                         <a class="btn btn-header-btns btn-link-water btn--medium-2 h-45 text-shark rounded-5 ms-1" href="#">
                             Get Started
             </a>
